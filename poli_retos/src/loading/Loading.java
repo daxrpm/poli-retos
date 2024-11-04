@@ -61,6 +61,7 @@ public class Loading {
             clearConsole();
             contador++;
         }
+        scanner.close();
     }
 
     private void excerciceA03() {
@@ -85,6 +86,7 @@ public class Loading {
             clearConsole();
             contador++;
         }
+        scanner.close();
     }
 
     private void excerciceA04() {
@@ -193,6 +195,7 @@ public class Loading {
             clearConsole();
             contador++;
         }
+        scanner.close();
     }
 
     public void g4_createLoading() {
