@@ -11,7 +11,7 @@ public class Arrays {
         this.LEVEL = LEVEL;
     }
 
-    private void excerciceA01() {
+    private void array1() {
         int SPACES = 15;
         Scanner sc = new Scanner(System.in);
         String[] names = NAME.split(" ");
@@ -48,7 +48,7 @@ public class Arrays {
         sc.close();
     }
 
-    private void excerciceA02() {
+    private void array2() {
         String[][] mt = new String[LEVEL][LEVEL * 4];
         for (int i = 0; i < LEVEL; i++) {
             for (int j = 0; j < LEVEL * 4; j++) {
@@ -84,7 +84,7 @@ public class Arrays {
         }
     }
 
-    private void excerciceA03() {
+    private void array3() {
         String[][] mt = new String[LEVEL * 2][LEVEL * 2];
         String name = NAME.split(" ")[0];
         for (int i = 0; i < LEVEL * 2; i++) {
@@ -118,7 +118,7 @@ public class Arrays {
 
     }
 
-    private void excerciceA04() {
+    private void array4() {
         String[] names = NAME.split(" ");
         String[][] mt = new String[LEVEL * 3][LEVEL * 3];
         for (int i = 0; i < LEVEL * 3; i++) {
@@ -151,7 +151,7 @@ public class Arrays {
 
     }
 
-    private void excerciceA05() {
+    private void array5() {
         String[] names = NAME.split(" ");
         int size = NAME.replace(" ", "").length();
         String[][] mt = new String[size][size];
@@ -186,15 +186,15 @@ public class Arrays {
         }
     }
 
-    public void g4_crearArrays() {
+    public void g4_imprimirTodosArrays() {
         Scanner sc = new Scanner(System.in);
         System.out.println("Ingrese su nombre completo: ");
         NAME = sc.nextLine();
-        excerciceA01();
-        excerciceA02();
-        excerciceA03();
-        excerciceA04();
-        excerciceA05();
+        array1();
+        array2();
+        array3();
+        array4();
+        array5();
         sc.close();
     }
 }

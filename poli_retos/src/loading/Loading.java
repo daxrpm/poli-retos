@@ -16,7 +16,7 @@ public class Loading {
         }
     }
 
-    private void excerciceA01() {
+    private void loading1() {
         String[] simbolos = { "/", "-", "\\", "|" };
         String[] loader = new String[4];
         loader[0] = " ";
@@ -39,7 +39,7 @@ public class Loading {
         }
     }
 
-    private void excerciceA02() {
+    private void loading2() {
         java.util.Scanner scanner = new java.util.Scanner(System.in);
         System.out.print("Ingrese un caracter para la barra de carga: ");
         char cargaChar = scanner.next().charAt(0);
@@ -64,7 +64,7 @@ public class Loading {
         scanner.close();
     }
 
-    private void excerciceA03() {
+    private void loading3() {
         java.util.Scanner scanner = new java.util.Scanner(System.in);
         System.out.print("Ingrese un caracter para desplazar: ");
         char cargaChar = scanner.next().charAt(0);
@@ -89,7 +89,7 @@ public class Loading {
         scanner.close();
     }
 
-    private void excerciceA04() {
+    private void loading4() {
         String[] signos = { "o0o", "0o0" };
         int contador = 0;
         int signoIndex = 0;
@@ -103,7 +103,7 @@ public class Loading {
         }
     }
 
-    private void excerciceA05() {
+    private void loading5() {
         int longitudBarra = 20;
         int contador = 0;
 
@@ -127,7 +127,7 @@ public class Loading {
         }
     }
 
-    private void excerciceA06() {
+    private void loading6() {
         int longitudBarra = 20;
         int contador = 0;
 
@@ -148,7 +148,7 @@ public class Loading {
         }
     }
 
-    private void excerciceA07() {
+    private void loading7() {
         String[] signos = { "\\", "|", "/", "-" };
         int longitudBarra = 20;
         int contador = 0;
@@ -175,7 +175,7 @@ public class Loading {
         }
     }
 
-    private void excerciceA08() {
+    private void loading8() {
         java.util.Scanner scanner = new java.util.Scanner(System.in);
         System.out.print("Ingrese su nombre y apellidos: ");
         String nombreCompleto = scanner.nextLine();
@@ -198,15 +198,15 @@ public class Loading {
         scanner.close();
     }
 
-    public void g4_createLoading() {
-        excerciceA01();
-        excerciceA02();
-        excerciceA03();
-        excerciceA04();
-        excerciceA05();
-        excerciceA06();
-        excerciceA07();
-        excerciceA08();
+    public void g4_imprimirTodosLoading() {
+        loading1();
+        loading2();
+        loading3();
+        loading4();
+        loading5();
+        loading6();
+        loading7();
+        loading8();
 
     }
 }

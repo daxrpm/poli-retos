@@ -8,7 +8,7 @@ public class Figuras {
         this.LADO = LADO;
     }
 
-    public static void excerciceA01(int lado) {
+    public static void figura1(int lado) {
         for (int i = 0; i < lado; i++) {
             for (int j = 0; j < lado; j++) {
                 if (i == 0 || i == lado - 1 || j == 0 || j == lado - 1) {
@@ -22,7 +22,7 @@ public class Figuras {
         System.out.println("");
     }
 
-    public static void excerciceA02(int lado) {
+    public static void figura2(int lado) {
         String[] signos = { "*", "+" };
         int contador = 0;
         for (int i = 0; i < lado; i++) {
@@ -44,7 +44,7 @@ public class Figuras {
         System.out.println("");
     }
 
-    public static void excerciceA03(int lado) {
+    public static void figura3(int lado) {
         for (int i = 0; i < lado; i++) {
             for (int j = 0; j <= i; j++) {
                 System.out.print("* ");
@@ -54,7 +54,7 @@ public class Figuras {
         System.out.println("");
     }
 
-    public static void excerciceA04(int lado) {
+    public static void figura4(int lado) {
         for (int i = 0; i < lado; i++) {
             for (int j = 0; j < lado; j++) {
                 if (j < lado - i - 1) {
@@ -68,11 +68,11 @@ public class Figuras {
         System.out.println("");
     }
 
-    public void g4_drawFigures() {
-        excerciceA01(LADO);
-        excerciceA02(LADO);
-        excerciceA03(LADO);
-        excerciceA04(LADO);
+    public void g4_imprimirTodasFiguras() {
+        figura1(LADO);
+        figura2(LADO);
+        figura3(LADO);
+        figura4(LADO);
     }
 
 }
