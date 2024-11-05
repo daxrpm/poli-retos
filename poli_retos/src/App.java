@@ -1,6 +1,7 @@
 import arrays.*;
 import loading.*;
 import figuras.*;
+import series.*;
 import java.util.Scanner;
 
 public class App {
@@ -9,6 +10,8 @@ public class App {
         Scanner sc = new Scanner(System.in);
         System.out.println("Ingrese su nivel/tamaño: ");
         int nivel = sc.nextInt();
+        SerieNumerica serieNumerica = new SerieNumerica(nivel);
+        serieNumerica.g4_imprimeTodasSeries();
         Arrays arrays = new Arrays(nivel);
         arrays.g4_imprimirTodosArrays();
         Loading loading = new Loading();
