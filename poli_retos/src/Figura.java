@@ -1,8 +1,8 @@
 public class Figura {
     private final int n_posicion; 
 
-    public Figura(int n) {
-        this.n_posicion = n;
+    public Figura(int nivel) {
+        this.n_posicion = nivel;
     }
 
 
