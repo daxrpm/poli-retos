@@ -1,8 +1,8 @@
 public class SerieCaracteres {
     private final int n;
 
-    public SerieCaracteres(int n) {
-        this.n = n;
+    public SerieCaracteres(int nivel) {
+        this.n = nivel;
     }
 
     public  void g4_imprimeTodasSeriesdeCaracteres () {
