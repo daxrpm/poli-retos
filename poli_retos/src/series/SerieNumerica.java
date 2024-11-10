@@ -127,3 +127,143 @@ public class SerieNumerica {
         }
     }
 }
+// serie uno
+    package series;
+
+import java.util.Scanner;
+
+public class g4_serieFibonacci {
+    public void ejecutar(){
+        int n = 0 , a = 0 , b= 1 , siguiente = 0;
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Ingrese el número de términos de la serie: ");
+        n = scanner.nextInt();
+        for (int i = 0; i < n; i++){
+            System.out.print (a + " ");
+            siguiente = a + b;
+            a = b;
+            b = siguiente;
+        }
+        System.out.println();
+        scanner.close();
+        
+    }
+}
+// serie dos
+package series;
+import java.util.Scanner;
+
+public class g4_serieAlterna {
+    public void ejecutar(){
+        int n = 0, impar = 1 ;
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Ingrese el número de términos de la serie: ");
+        n = scanner.nextInt();
+
+        for(int i = 0; i < n; i++){
+            if ( i % 2 == 0){
+                System.out.print(impar + " ");
+                impar += 2;
+            }else{
+                System.out.print("0 ");
+            }
+        }
+        System.out.println();
+        scanner.close();
+
+    }
+}
+// serie tres 
+package series;
+import java.util.Scanner;
+
+public class g4_serieMixto {
+    public void ejecutar() {
+        int n = 0, a = 0, b = 1, siguiente = 0;
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Ingrese el número de términos de la serie: "); 
+        n = scanner.nextInt();
+        for ( int i = 0; i < n; i++){
+            if (i == 0 ){
+                System.out.print(a + "/1 ");
+            }else if (i == 1){
+                System.out.print(b + "/3 ");
+            }else{
+                siguiente = a + b;
+                System.out.print(siguiente + "/" + ( 1 + 2 *i) + " ");
+                a = b;
+                b = siguiente;
+            } 
+            }
+        System.out.println(); 
+        scanner.close();
+        }
+        
+    }
+   
+//serie cuatro 
+package series;
+import java.util.Scanner;
+
+public class g4_serieMixto2 {
+    public void ejecutar(){
+        int n = 0, a = 0, b = 1, siguiente = 0;
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Ingrese el número de términos de la serie: ");
+        n = scanner.nextInt();
+
+        for( int i = 0; i < n; i++){
+            if (i == 0){
+                System.out.print(a + "/2 ");
+            }else if (i == 1) {
+                System.out.print(b + "/4 ");
+            }else{
+                siguiente= a + b;
+                System.out.print(siguiente + "/" + (2 * (i+1)) + " ");
+                a = b;
+                b = siguiente;
+            }
+        }
+        System.out.println();
+        scanner.close();
+    }
+
+
+}
+// serie cinco 
+package series;
+import java.util.Scanner;
+
+public class g4_seriePrimos {
+    private boolean esPrimo(int numero){
+        if (numero <= 1){
+            return false;
+        }
+        for (int i = 2; i <=Math.sqrt(numero); i++){
+            if (numero % i == 0){
+                return false;
+            }
+        }    
+        return true;
+        }
+   
+    public void ejecutar(){
+        int n = 0, contador = 0, numeroActual = 0;
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Ingrese el número de términos para la serie: ");
+        n = scanner.nextInt();
+
+        while (contador < n){
+            if (esPrimo(numeroActual)){
+                System.out.print(numeroActual + " ");
+                contador++;
+            }
+            numeroActual++;
+        }
+        System.out.println();
+        scanner.close();
+
+    }
+
+    
+}
