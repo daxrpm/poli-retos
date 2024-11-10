@@ -128,10 +128,6 @@ public class SerieNumerica {
     }
 }
 // serie uno
-    package series;
-
-import java.util.Scanner;
-
 public class g4_serieFibonacci {
     public void ejecutar(){
         int n = 0 , a = 0 , b= 1 , siguiente = 0;
@@ -150,9 +146,6 @@ public class g4_serieFibonacci {
     }
 }
 // serie dos
-package series;
-import java.util.Scanner;
-
 public class g4_serieAlterna {
     public void ejecutar(){
         int n = 0, impar = 1 ;
@@ -174,9 +167,6 @@ public class g4_serieAlterna {
     }
 }
 // serie tres 
-package series;
-import java.util.Scanner;
-
 public class g4_serieMixto {
     public void ejecutar() {
         int n = 0, a = 0, b = 1, siguiente = 0;
@@ -202,9 +192,6 @@ public class g4_serieMixto {
     }
    
 //serie cuatro 
-package series;
-import java.util.Scanner;
-
 public class g4_serieMixto2 {
     public void ejecutar(){
         int n = 0, a = 0, b = 1, siguiente = 0;
@@ -231,9 +218,6 @@ public class g4_serieMixto2 {
 
 }
 // serie cinco 
-package series;
-import java.util.Scanner;
-
 public class g4_seriePrimos {
     private boolean esPrimo(int numero){
         if (numero <= 1){
