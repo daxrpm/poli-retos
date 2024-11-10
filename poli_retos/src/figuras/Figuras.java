@@ -67,7 +67,119 @@ public class Figuras {
         }
         System.out.println("");
     }
+public class g4_figuraCinco {
+    public void ejecutar() {
+        int n = 0;
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Ingrese el tamaño de la piramide: ");
+        n = scanner.nextInt();
 
+        for (int i = 0; i < n; i++){
+            for (int j = 0; j < i; j++){
+                System.out.print(" ");
+            }
+            for (int k = 0; k < 2 * (n - i) - 1; k++){
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+        scanner.close();
+    }
+
+
+}
+public class g4_figuraSeis {
+    public void ejecutar(){
+        int n=0;
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Ingrese el tamaño de la figura: ");
+        n = scanner.nextInt();
+
+        for (int i = 0; i < n; i++){
+            for (int j = 0; j < n - i - 1; j++){
+                System.out.print(" ");
+            }
+            for(int k = 0; k < 2 * i + 1;k++){
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+        scanner.close();
+    }
+
+
+}
+
+public class g4_figuraSiete {
+    public void ejecutar(){
+        int n = 0;
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Ingrese el número de escalones: ");
+        n = scanner.nextInt();
+
+        for (int i = 0; i < n; i++){
+            for (int j = 0; j < i; j++){
+                System.out.print("    ");
+            }
+            System.out.println("|___");
+        }
+        scanner.close();
+    }
+
+}
+
+public class g4_figuraOcho {
+    public void ejecutar(){
+        int n = 0;
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Ingrese el número de escalones: ");
+        n = scanner.nextInt();
+
+        for (int i = 0; i < n; i++){
+            for (int j = 0; j < n -i -1 ;j++){
+                System.out.print("    ");
+            }
+            System.out.println("___|");
+        }
+        scanner.close();
+    }
+
+
+}
+
+public class g4_figuraNueve {
+    public void ejecutar(){
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Introduce el tamaño de la pirámide: ");
+        int niveles = scanner.nextInt();
+
+        for (int i = 0; i < niveles - 1; i++) {
+            System.out.print("     "); 
+        }
+        System.out.println("    ___"); 
+        for (int i = 0; i < niveles; i++) {
+            for (int j = 0; j < niveles - i - 1; j++) {
+                System.out.print("     "); 
+            }
+
+            System.out.print("___|  ");
+
+            if (i > 0) {
+                for (int j = 0; j < i * 10; j++) { 
+                    System.out.print(" ");
+                }
+            }
+
+            System.out.println(" |___");
+        }
+
+        scanner.close();
+    }
+
+}
+
+    
     public void figura10() {
         int espacios = 0;
         for (int c = 1; c <= t; c++) {
@@ -267,6 +379,30 @@ public class Figuras {
             System.out.println();
         }
     }
+    public class g4_figuraDiecinueve {
+    public void ejecutar(){
+        int n = 0;
+        int numero = 1;
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Ingrese el tamaño de la figura: ");
+        n = scanner.nextInt();
+
+        System.out.println("*");
+        if (n >= 1){
+            System.out.println("+  *");
+        }
+        for(int i = 1; i <= n; i++){
+            System.out.print("+  ");
+            for (int j = 0; j < i; j++){
+                System.out.print(numero + " ");
+                numero += (j + 1);
+            }
+            System.out.print("*\n");
+        }
+
+        scanner.close();
+    }
+}
 
     public void g4_imprimirTodasFiguras() {
         System.out.println("Figuras:");
@@ -274,6 +410,11 @@ public class Figuras {
         figura2(t);
         figura3(t);
         figura4(t);
+        figuraCinco();
+        figuraSeis();
+        figuraSiete();
+        figuraOcho();
+        figuraNueve();
         System.out.println("");
         figura10();
         System.out.println("");
@@ -293,6 +434,7 @@ public class Figuras {
         System.out.println("");
         figura18();
         System.out.println("");
+        figuraDiecinueve();
     }
 
 }
