@@ -198,21 +198,7 @@ public class Loading {
         scanner.close();
     }
 
-    public void g4_imprimirTodosLoading() {
-        loading1();
-        loading2();
-        loading3();
-        loading4();
-        loading5();
-        loading6();
-        loading7();
-        loading8();
-
-    }
 }
-// loading nueve 
-package loadings;
-import java.util.Scanner;
 
 public class g4_loadingNueve {
     private String nombreCompleto;
@@ -246,9 +232,6 @@ public class g4_loadingNueve {
         }
     }
 }
-// loading diez
-package loadings;
-import java.util.Scanner;
 
 public class g4_loadingDiez {
     
@@ -296,12 +279,6 @@ public class g4_loadingDiez {
         new g4_loadingDiez(); 
     }
 }
-// loading once 
-package loadings;
-
-import java.util.Random;
-import java.util.Scanner;
-
 public class g4_loadingOnce {
 
     public g4_loadingOnce() {
@@ -335,12 +312,6 @@ public class g4_loadingOnce {
         new g4_loadingOnce(); 
     }
 }
-//loagind doce 
-package loadings;
-
-import java.util.Random;
-import java.util.Scanner;
-
 public class g4_loadingDoce {
 
     public g4_loadingDoce() {
@@ -395,9 +366,6 @@ public class g4_loadingDoce {
         new g4_loadingDoce();
     }
 }
-//loading trece
-package loadings;
-
 public class g4_loadingTrece {
 
     public g4_loadingTrece() {
@@ -441,4 +409,18 @@ public class g4_loadingTrece {
         new g4_loadingTrece();
     }
 }
-
+ public void g4_imprimirTodosLoading() {
+        loading1();
+        loading2();
+        loading3();
+        loading4();
+        loading5();
+        loading6();
+        loading7();
+        loading8();
+        loadingNueve();
+        loadingDiez();
+        loagingOnce();
+        loadingDoce();
+        loadingTrece();
+    }
