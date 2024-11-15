@@ -1,1 +1,1 @@
-# Group 4 - PoliRetos
+# PoliRetos
