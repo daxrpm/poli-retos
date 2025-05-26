@@ -8,7 +8,7 @@ public class SerieNumerica {
         this.n = n;
     }
 
-    public void g4_imprimeTodasSeries() {
+    public void g3_imprimeTodasSeries() {
 
         System.out.println("Series:");
         secuencia1();
@@ -128,7 +128,7 @@ public class SerieNumerica {
     }
 }
 // serie uno
-public class g4_serieFibonacci {
+public class g3_serieFibonacci {
     public void ejecutar(){
         int n = 0 , a = 0 , b= 1 , siguiente = 0;
         Scanner scanner = new Scanner(System.in);
@@ -146,7 +146,7 @@ public class g4_serieFibonacci {
     }
 }
 // serie dos
-public class g4_serieAlterna {
+public class g3_serieAlterna {
     public void ejecutar(){
         int n = 0, impar = 1 ;
         Scanner scanner = new Scanner(System.in);
@@ -167,7 +167,7 @@ public class g4_serieAlterna {
     }
 }
 // serie tres 
-public class g4_serieMixto {
+public class g3_serieMixto {
     public void ejecutar() {
         int n = 0, a = 0, b = 1, siguiente = 0;
         Scanner scanner = new Scanner(System.in);
@@ -192,7 +192,7 @@ public class g4_serieMixto {
     }
    
 //serie cuatro 
-public class g4_serieMixto2 {
+public class g3_serieMixto2 {
     public void ejecutar(){
         int n = 0, a = 0, b = 1, siguiente = 0;
         Scanner scanner = new Scanner(System.in);
@@ -218,7 +218,7 @@ public class g4_serieMixto2 {
 
 }
 // serie cinco 
-public class g4_seriePrimos {
+public class g3_seriePrimos {
     private boolean esPrimo(int numero){
         if (numero <= 1){
             return false;
